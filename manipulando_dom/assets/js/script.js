@@ -6,5 +6,12 @@ const h1 = document.getElementById('page-title');
 buttonMode.addEventListener("click", changeMode);
 
 function changeMode() {
-    bg.style.color="black";
+    changeClass();
+}
+
+function changeClass(){
+    buttonMode.classList.toggle('dark-mode');
+    h1.classList.toggle('dark-mode');
+    bg.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
 }
